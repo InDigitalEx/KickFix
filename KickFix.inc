@@ -18,14 +18,10 @@
 	#define KickFix_Delay		250
 #endif
 
-forward OnPlayerKick(playerid);
-
 stock KickFix_Kick(playerid)
 {
 	if(!IsPlayerConnected(playerid))
 		return false;
-
-	OnPlayerKick(playerid);
 	SetTimerEx("KickFix_KickTimer", KickFix_Delay, false, "i", playerid);
 	return true;
 }
