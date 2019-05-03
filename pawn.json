@@ -1,0 +1,7 @@
+{
+	"user": "InDigitalEx",
+	"repo": "KickFix",
+	"dependencies": [
+		"sampctl/samp-stdlib"
+	]
+}
